@@ -1,11 +1,4 @@
 <div id="header">
-	<div class="width">
-		<div id="header_text">Your Organization Name Here</div>
-		<div id="login">
-			<a href="http://www.orgsync.com/login">Login to OrgSync</a>
-		</div>
-		<div style="clear:both;"></div>
-	</div>
 	<div id="navigation">
 		<div class="width">
 			<ul>
