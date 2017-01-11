@@ -1,4 +1,3 @@
-<!-- open sidebar -->
 <div id="right_column">
     <h4>Our Links:</h4>
     <ul><li><a href="http://www.orgsync.com/about-orgsync/website-builder-about/">About OrgSync</a></li>
@@ -11,13 +10,7 @@
     <p>	We'd love to hear any comments or suggestions you have. Let us know what kind of job we are doing!</p>
     <h4>Editing This Sidebar</h4>
     This sidebar can be edited by accessing the footer portion, under the template elements section of the website builder.
-</div><div style="clear:both;">
-</div><div style="clear:both;">
 </div>
-<!-- end sidebar-->
-<!-- end body-->
-<!-- begin footer-->
 <div id="footer">
-
     <a style="border:0px;" href="http://www.orgsync.com"><img src="[[image:poweredby]]"/></a>
 </div>

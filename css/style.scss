@@ -1,47 +1,47 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     font-family: helvetica, arial, verdana, sans-serif;
     font-size: 13px;
     background: #f2f2f2; // body background color
 }
-#header{
-    width:100%;
+#header {
+    width: 100%;
     padding-top: 10px;
     background: #ffffff; //main header background color
 }
-#navigation{
+#navigation {
     margin-top:15px;
-    width:100%;
+    width: 100%;
     background: #bc0f05; //navigation background color
     border-bottom: 2px solid #fff;
     font-weight: bold;
 }
-#header_text{
+#header_text {
     background: url(http://s3.amazonaws.com/os_extranet_images/67124_original.png) no-repeat;
     color: #000;
-    display:block;
+    display: block;
     float: left;
-    padding-left:110px;
+    padding-left: 110px;
     font-size: 16px;
     padding-top:58px;
     font-weight: normal;
-    min-height:28px;
-    width:450px;
+    min-height: 28px;
+    width: 450px;
 }
 
 /* Basic re-styling , does apply to some modules */
-h2{
-    font-size:220%;
+h2 {
+    font-size: 220%;
 }
-h3{
-    font-size:150%;
+h3 {
+    font-size: 150%;
 }
-h4{
+h4 {
     font-size: 150%;
     font-weight: normal;
 }
-hr{
+hr {
     color: #ccc;
     background-color: #ccc;
     border: 0px;
@@ -49,33 +49,33 @@ hr{
 }
 
 /* Begin Navigation */
-#navigation ul{
+#navigation ul {
     margin: 0px;
     padding: 12px 0;
 }
-#navigation ul li{
-    list-style-type:none;
+#navigation ul li {
+    list-style-type: none;
     display: inline;
     margin: 0px;
 }
-#navigation ul li a{
+#navigation ul li a {
     padding: 12px 30px;
     color: #fff;
     text-decoration: none;
 }
-#navigation ul li a:hover{
+#navigation ul li a:hover {
     color: #000;
     background: #fff;
 }
 
 
-.width{
-    width:960px;
+.width {
+    width: 960px;
     margin: 0 auto;
 }
 
 /* Set Base Link Color */
-a{
+a {
     color: #333;
 }
 /* Set Link Color on Mouse Over */
@@ -83,55 +83,55 @@ a:hover {
     color: #008de7;
 }
 /* Set Link Color for Visited Links */
-a:visited{
+a:visited {
     color: #470679;
 }
 
 /* Everything below the navigation is in the wrapper */
-#wrapper{
-    width:100%;
+#wrapper {
+    width: 100%;
     margin: 0 auto;
     line-height: 1.5em;
     min-height: 700px;
 }
-#wrapper .width{
+#wrapper .width {
     background: #fff;
     padding: 20px;
 }
-.content{
+.content {
     float: left;
-    width:700px;
+    width: 700px;
 }
 
 /* Right Column */
-#wrapper #right_column{
+#wrapper #right_column {
     float: right;
-    margin-left:10px;
-    width:200px;
+    margin-left: 10px;
+    width: 200px;
     padding: 0px 15px;
     border-left: 1px solid #cfcfcf;
-    font-size:11px;
+    font-size: 11px;
 }
-#right_column ul li{
+#right_column ul li {
     list-style-type: none;
     padding-left: 10px;
 }
-#right_column ul{
+#right_column ul {
     margin: 0px; padding: 0px;
 }
 
 /* Login Button */
-#login{
+#login {
 
     float: right;
     min-height: 50px;
 }
-#login a{
+#login a {
     color: #e20c00;
     text-decoration: none;
     font-weight: bold;
 }
-#login a:hover{
+#login a:hover {
     color: #000;
     text-decoration: none;
     font-weight: bold;
@@ -141,47 +141,47 @@ a:visited{
 the rest of the modules are restyled in OrgSync_Defaults, a file included in the default
 meta/head section. You can always over-right any of those css declarations in this file if you would   like to further customize the look of the modules. */
 
-#calendar_controls a{
+#calendar_controls a {
     background: #f4f4f4;
     padding: 0 10px;
 }
-#calendar_controls a{
+#calendar_controls a {
     background: #f4f4f4;
     padding: 0 10px;
 }
-.icon_window{
+.icon_window {
     background: #f4f4f4;
     padding: 0 10px;
 }
-.form_new_submission a{
+.form_new_submission a {
     background: #f4f4f4;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
     padding: 10px 0;
 }
-.pod-header{
+.pod-header {
     background: #f4f4f4;
     border: 1px solid #ccc;
 }
-.even-row td{
+.even-row td {
     background: #f4f4f4;
 }
 
 /* Picture Albums */
-.new_pod{
+.new_pod {
     border: 1px solid #eee;
     background: #fafafa;
     padding: 8px;
     margin: 10px 0;
 }
-.new_pod h2{
+.new_pod h2 {
     font-weight: normal;
     font-size: 150%;
     margin-left: 8px;
 }
-.new_pod ul{
+.new_pod ul {
     margin: 10px;
 }
-.new_pod ul li{
+.new_pod ul li {
     list-style-type: none;
     padding: 8px 8px 8px 40px;
     width: 100px;
@@ -189,39 +189,39 @@ meta/head section. You can always over-right any of those css declarations in th
     border: 1px solid #ccc;
     background: url(http://s3.amazonaws.com/os_extranet_images/67122_original.png) #f4f4f4;  background-position: middle left; background-repeat: no-repeat;
 }
-#contact .pod-body textarea{
-    width:400px;
+#contact .pod-body textarea {
+    width: 400px;
 }
 
 
-.picture-box{
+.picture-box {
     padding: 8px 0;
 }
-.picture-box img{
+.picture-box img {
     border: 0px;
     height: 75px;
 }
-.album_pic_prev_image_link{
+.album_pic_prev_image_link {
     border: 0px;
 }
-.album_pic_next_image_link{
-    border:0px;
+.album_pic_next_image_link {
+    border: 0px;
 }
-input, label, select, textarea{
+input, label, select, textarea {
     float: left;
-    padding:3px;
-    margin:3px;
-    font-size:14px;
+    padding: 3px;
+    margin: 3px;
+    font-size: 14px;
 }
 
 /* News Module RSS Feed */
-.rss_feed{
+.rss_feed {
     font-size: 11px;
 }
 
 /* Footer */
-#footer{
-    width:960px;
+#footer {
+    width: 960px;
     text-align: center;
     margin: 30px auto 20px auto;
     color: #666;
@@ -229,21 +229,21 @@ input, label, select, textarea{
     clear: both;
 }
 /* Separate link styling for the navigation in the footer */
-#footer a{
-    font-size:12px;
+#footer a {
+    font-size: 12px;
     color: #666;
     text-decoration: none;
 }
-#footer a:hover{
+#footer a:hover {
     color: #000;
     text-decoration: underline;
 }
-#footer img{
-    border:0px;
+#footer img {
+    border: 0px;
 }
 
 /* Specific styles for the About OrgSync Page */
-#about_orgsync h2{
+#about_orgsync h2 {
     color: #007dad;
     font-size: 24px;
     font-family: helvetica, verdana, arial, sans-serif; }
