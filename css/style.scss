@@ -1,1 +1,34 @@
 @import "normalize";
+
+/* Global settings */
+.width {
+    width: 1320px; // Responsive
+    margin: 0 auto;
+}
+a, a:visited, a:focus {
+    text-decoration: none;
+}
+
+/* Navigation bar */
+#header {
+    ul {
+        list-style: none;
+        float: right;
+        li {
+            display: inline-block;
+            a {
+                padding: 1em 2em;
+            }
+        }
+    }
+    .width {
+        overflow: auto;
+    }
+}
+
+/* Responsive settings */
+@media screen and (max-width: 1360px) {
+    .width {
+        width: 90%;
+    }
+}
