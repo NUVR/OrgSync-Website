@@ -1,6 +1,9 @@
 @import "../bourbon/bourbon";
 @import "normalize";
 
+/* Global variables */
+$anim: 0.25s;
+
 /* Fonts */
 @font-face {
     font-family:'Avenir';
@@ -13,6 +16,28 @@
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-FB02;
+}
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Semibold.eot');
+	src: url('../fonts/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Semibold.woff2') format('woff2'),
+		url('../fonts/SegoeUI-Semibold.woff') format('woff'),
+		url('../fonts/SegoeUI-Semibold.ttf') format('truetype'),
+		url('../fonts/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe UI Bold';
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+		url('../fonts/SegoeUI-Bold.woff') format('woff'),
+		url('../fonts/SegoeUI-Bold.ttf') format('truetype'),
+		url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
 
 /* Global settings */
@@ -69,6 +94,31 @@ a, a:visited, a:focus {
     text-align: center;
     color: #fff;
     height: 100vh;
+    .width {
+        padding-top: 160px; // Offset for the menu
+    }
+    h1 {
+        font-family: 'Segoe UI Bold', sans-serif;
+        font-size: 96px;
+        cursor: default;
+    }
+    h2 {
+        font-family: 'Avenir', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        cursor: default;
+    }
+    .playbutton {
+        margin: 8vh auto;
+        width: 113px;
+        height: 113px;
+        cursor: pointer;
+        background: url('../img/playbutton.png') no-repeat center center;
+        @include transition( background $anim );
+        &:hover {
+            background: url('../img/playbuttonfilled.png') no-repeat center center;
+        }
+    }
 }
 
 /* Responsive settings */
