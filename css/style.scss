@@ -1,4 +1,19 @@
+@import "../bourbon/bourbon";
 @import "normalize";
+
+/* Fonts */
+@font-face {
+    font-family:'Avenir';
+    src: url('../fonts/AvenirLTStd-Light.eot');
+    src: url('../fonts/AvenirLTStd-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLTStd-Light.woff2') format('woff2'),
+    url('../fonts/AvenirLTStd-Light.woff') format('woff'),
+    url('../fonts/AvenirLTStd-Light.svg#AvenirLTStd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB02;
+}
 
 /* Global settings */
 .width {
@@ -7,23 +22,53 @@
 }
 a, a:visited, a:focus {
     text-decoration: none;
+    color: inherit;
+}
+* {
+    box-sizing: border-box;
+}
+// Aligns content vertically
+.valign {
+    @include display(flex);
+    @include flex-direction(column);
+    &::before, &::after {
+        content: "";
+        @include flex-grow(1);
+    }
 }
 
 /* Navigation bar */
 #header {
-    ul {
-        list-style: none;
-        float: right;
-        li {
+    position: absolute;
+	width: 100%;
+    .width {
+        overflow: auto;
+        padding: 2em 0;
+        .logo {
             display: inline-block;
-            a {
+            height: 90px;
+        }
+        ul {
+            list-style: none;
+            float: right;
+            li {
+                display: inline-block;
                 padding: 1em 2em;
+                color: #fff;
+                font-family: 'Avenir', sans-serif;
+                font-size: 20px;
             }
         }
     }
-    .width {
-        overflow: auto;
-    }
+}
+
+/* Above the fold content */
+#top {
+    background: url('../img/background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
 }
 
 /* Responsive settings */

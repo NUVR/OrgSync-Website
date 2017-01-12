@@ -29,14 +29,6 @@ html {
   }
 }
 
-/**
- * Remove default margin.
- */
-
-body {
-  margin: 0;
-}
-
 /* HTML5 display definitions
    ========================================================================== */
 
@@ -576,3 +568,14 @@ td,
 th {
   padding: 0;
 }
+
+// Horrible Chrome bug fix
+/**
+ * Remove default margin.
+ */
+
+ html, body, h1, h2, h3, h4, h5, h6, p, div, blockquote {
+     margin: 0;
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+ }
