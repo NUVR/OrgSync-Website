@@ -14,10 +14,10 @@
 			<!-- end header -->
 			<div class="logos">
 				<div class="width">
-					<img src="img/Google.png" alt="Google">
-					<img src="img/Microsoft.png" alt="Microsoft">
-					<img src="img/Oculus.png" alt="Oculus">
-					<img src="img/Vive.png" alt="Vive">
+					<div class="flex-img"><img src="img/Google.png" alt="Google"></div>
+					<div class="flex-img"><img src="img/Microsoft.png" alt="Microsoft"></div>
+					<div class="flex-img"><img src="img/Oculus.png" alt="Oculus"></div>
+					<div class="flex-img"><img src="img/Vive.png" alt="Vive"></div>
 				</div>
 			</div>
 			<div id="about">

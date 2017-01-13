@@ -43,7 +43,7 @@ $primary: #c31f1f;
 
 /* Global settings */
 .width {
-    width: 1320px; // Responsive
+    width: 1320px; // Responsive @ 1360px
     margin: 0 auto;
 }
 a, a:visited, a:focus {
@@ -121,15 +121,16 @@ body {
     height: 100vh;
     .width {
         padding-top: 160px; // Offset for the menu
+        min-height: 500px;
     }
     h1 {
         font-family: 'Segoe UI Bold', sans-serif;
-        font-size: 96px;
+        font-size: 96px; // Responsive @ 960px
         cursor: default;
     }
     h2 {
         font-family: 'Avenir', sans-serif;
-        font-size: 24px;
+        font-size: 24px; // Responsive @ 960px
         font-weight: 300;
         cursor: default;
     }
@@ -150,8 +151,16 @@ body {
 .logos {
     text-align: center;
     background: #f0f0f0;
-    img {
-        padding: 2em 3em;
+    .width {
+        display: flex;
+        flex-direction: row;
+        .flex-img {
+            flex: 1 1 auto;
+            img {
+                padding: 2em;
+                max-width: 100%;
+            }
+        }
     }
 }
 
@@ -159,13 +168,13 @@ body {
 #about {
     padding: 3em 0;
     left, right {
-        width: 50%;
+        width: 50%; // Responsive @ 960px
         display: inline-block;
         vertical-align: middle;
     }
     left {
-        margin-left: -20vw;
-        margin-right: 20vw;
+        margin-left: -20vw; // Responsive @ 960px
+        margin-right: 20vw; // Responsive @ 960px
     }
     h3 {
         font-family: 'Segoe UI', sans-serif;
@@ -202,5 +211,37 @@ body {
 @media screen and (max-width: 1360px) {
     .width {
         width: 90%;
+    }
+    #about {
+        left {
+            img {
+                width: 60vw;
+            }
+        }
+    }
+}
+@media screen and (max-width: 960px) {
+    #top {
+        h1 {
+            font-size: 72px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+    #about {
+        left, right {
+            width: 100%;
+        }
+        left {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            padding-bottom: 1em;
+            img {
+                height: 200px;
+                width: initial;
+            }
+        }
     }
 }
