@@ -3,6 +3,7 @@
 
 /* Global variables */
 $anim: 0.25s;
+$primary: #c31f1f;
 
 /* Fonts */
 @font-face {
@@ -52,6 +53,9 @@ a, a:visited, a:focus {
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: 'Avenir', sans-serif;
+}
 // Aligns content vertically
 .valign {
     @include display(flex);
@@ -79,9 +83,30 @@ a, a:visited, a:focus {
             li {
                 display: inline-block;
                 padding: 1em 2em;
-                color: #fff;
                 font-family: 'Avenir', sans-serif;
                 font-size: 20px;
+                cursor: default;
+                a, a:focus, a:hover, a:visited {
+                    color: #fff;
+                    position: relative;
+                    cursor: pointer;
+                    @include transform(perspective(1px) translateZ(0));
+                }
+                a:hover::before {
+                    right: 0;
+                }
+                a::before {
+                    content: "";
+                    position: absolute;
+                    background: $primary;
+                    left: 0;
+                    bottom: -6px;
+                    height: 4px;
+                    right: 100%;
+                    @include transition( all $anim );
+                    @include transition-timing-function( cubic-bezier(.13,1,.98,.98) );
+                    overflow: hidden;
+                }
             }
         }
     }
@@ -119,6 +144,58 @@ a, a:visited, a:focus {
             background: url('../img/playbuttonfilled.png') no-repeat center center;
         }
     }
+}
+
+/* Header foot */
+.logos {
+    text-align: center;
+    background: #f0f0f0;
+    img {
+        padding: 2em 3em;
+    }
+}
+
+/* "About" section */
+#about {
+    padding: 3em 0;
+    left, right {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    left {
+        margin-left: -20vw;
+        margin-right: 20vw;
+    }
+    h3 {
+        font-family: 'Segoe UI', sans-serif;
+        color: #181313;
+        font-size: 36px;
+    }
+    p {
+        line-height: 2;
+        color: #5b5b5b;
+        padding: 2em 0;
+    }
+    .btn {
+        background: #eb1d1d;
+        border: 0;
+        color: #fff;
+        padding: 1em 4em;
+        @include transition( background $anim );
+        &:hover {
+            background: $primary;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 1em
 }
 
 /* Responsive settings */
