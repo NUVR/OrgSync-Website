@@ -2,17 +2,21 @@
     <div class="width footer-content">
         <div class="footer-widget">
             <h4>Site Map</h4>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Events</a>
-            <a href="#">News</a>
-            <a href="#">Contact Us</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
         <div class="footer-widget">
             <h4>Recent Events</h4>
         </div>
+        <div class="footer-widget">
+        </div>
     </div>
     <div class="copyright">
-        <p>Copyright &copy; 2016 Northeastern University Virtual Reality. All rights reserved.</p>
+        <p>Copyright &copy; 2017 Northeastern University Virtual Reality. All rights reserved.</p>
     </div>
 </div>

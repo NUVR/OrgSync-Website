@@ -209,7 +209,29 @@ body {
 /* Footer */
 #footer {
     text-align: center;
-    padding: 1em
+    background: #262626;
+    .footer-content {
+        color: #fff;
+        padding: 2em 0;
+        .footer-widget {
+            text-align: left;
+            display: inline-block;
+            width: 33%;
+            vertical-align: top;
+            ul {
+                list-style: none;
+                -webkit-margin-before: 0;
+                -webkit-margin-after: 0;
+                -webkit-padding-start: 0;
+            }
+        }
+    }
+    .copyright {
+        padding: 2em 0;
+        color: #484848;
+        background: #212121;
+        font-size: 12px;
+    }
 }
 
 /* Responsive settings */
