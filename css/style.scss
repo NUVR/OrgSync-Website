@@ -3,7 +3,7 @@
 
 /* Global variables */
 $anim: 0.25s;
-$primary: #c31f1f;
+$primary: #eb1d1d;
 
 /* Fonts */
 @font-face {
@@ -52,6 +52,10 @@ a, a:visited, a:focus {
 }
 * {
     box-sizing: border-box;
+}
+*::selection {
+    background: $primary;
+    color: #fff;
 }
 body {
     font-family: 'Avenir', sans-serif;
@@ -119,6 +123,7 @@ body {
     text-align: center;
     color: #fff;
     height: 100vh;
+    min-height: 500px;
     .width {
         padding-top: 160px; // Offset for the menu
         min-height: 500px;
@@ -187,13 +192,13 @@ body {
         padding: 2em 0;
     }
     .btn {
-        background: #eb1d1d;
+        background: $primary;
         border: 0;
         color: #fff;
         padding: 1em 4em;
         @include transition( background $anim );
         &:hover {
-            background: $primary;
+            background: #c31f1f;
         }
         &:focus {
             outline: none;

@@ -5,8 +5,9 @@
 		<?php include 'header.php'; ?>
 		<div class="content">
 			<div class="valign" id="top">
+				<div class="video"></div>
 				<div class="width">
-					<div class="playbutton"></div>
+					<div id="playbutton" class="playbutton"></div>
 					<h1>Northeastern VR</h1>
 					<h2>Northeastern’s first and only virtual reality and augmented reality organization</h2>
 				</div>
@@ -36,3 +37,9 @@
 		<?php include 'footer.php'; ?>
 	</body>
 </html>
+<script>
+	document.querySelector('#playbutton').addEventListener('click', function() {
+		var iframe = '<iframe width="853" height="480" src="https://www.youtube.com/embed/VzAwdBZ3KCQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+		document.querySelector('.video').innerHTML = iframe;
+	});
+</script>
