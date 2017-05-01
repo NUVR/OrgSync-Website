@@ -21,9 +21,56 @@
 				</right>
 			</section>
 			<section class="width">
-				<left>Memes</left><right>
+				<left></left><right>
 					<h3>Typical meetings</h3>
 					<p>A typical meeting at NUVR is structured as such: we meet on Wednesdays at 7:30PM. Upon the arrival of our members, we take the opportunity to discuss the latest news; both the local news on Northeastern's campus (what future events we are planning, how far we are in achieving recognition with the board, etc.) and the news of tech field. We then (anticipate) using the remainder of our scheduled time to demo our latest developments using our tech. Our first purchase goal is a Microsoft Hololens, followed by an Oculus Rift.</p>
+				</right>
+			</section>
+			<h3 style="text-align:center;background:#f8f8f6;padding:1em;">Board Members</h3>
+			<section class="width">
+				<left>
+					<div class="user-profile">
+						<img src="img/peter.jpg">
+						<div class="user-id">
+							<h5>Peter Abbondanzo</h5>
+							<h6>President</h6>
+							<span>CCIS 2021</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pellentesque mi eget porttitor. Morbi cursus, tortor nec scelerisque ultrices, sapien enim ornare dolor, non malesuada ligula felis eu nunc. Morbi imperdiet ultricies nunc, ut gravida lectus sollicitudin at. Cras tempor, libero eget euismod eleifend, purus arcu rutrum erat, quis tristique tortor ipsum a sem.</p>
+						</div>
+					</div>
+				</left><right>
+					<div class="user-profile">
+						<img src="img/david.jpg">
+						<div class="user-id">
+							<h5>David Dworken</h5>
+							<h6>President</h6>
+							<span>CCIS 2020</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pellentesque mi eget porttitor. Morbi cursus, tortor nec scelerisque ultrices, sapien enim ornare dolor, non malesuada ligula felis eu nunc. Morbi imperdiet ultricies nunc, ut gravida lectus sollicitudin at. Cras tempor, libero eget euismod eleifend, purus arcu rutrum erat, quis tristique tortor ipsum a sem.</p>
+						</div>
+					</div>
+				</right>
+			</section>
+			<section class="width">
+				<left>
+					<div class="user-profile">
+						<img src="img/taha.jpg">
+						<div class="user-id">
+							<h5>Taha Vasowalla</h5>
+							<h6>Treasurer</h6>
+							<span>COE 2021</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pellentesque mi eget porttitor. Morbi cursus, tortor nec scelerisque ultrices, sapien enim ornare dolor, non malesuada ligula felis eu nunc. Morbi imperdiet ultricies nunc, ut gravida lectus sollicitudin at. Cras tempor, libero eget euismod eleifend, purus arcu rutrum erat, quis tristique tortor ipsum a sem.</p>
+						</div>
+					</div>
+				</left><right>
+					<div class="user-profile">
+						<img src="img/sam.jpg">
+						<div class="user-id">
+							<h5>Samuel Francis-Caccavale</h5>
+							<h6>Secretary</h6>
+							<span>CCIS 2020</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum pellentesque mi eget porttitor. Morbi cursus, tortor nec scelerisque ultrices, sapien enim ornare dolor, non malesuada ligula felis eu nunc. Morbi imperdiet ultricies nunc, ut gravida lectus sollicitudin at. Cras tempor, libero eget euismod eleifend, purus arcu rutrum erat, quis tristique tortor ipsum a sem.</p>
+						</div>
+					</div>
 				</right>
 			</section>
 		</div>

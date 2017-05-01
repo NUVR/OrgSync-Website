@@ -173,7 +173,7 @@ p {
         cursor: default;
     }
     .video-playing {
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         top: 0;
@@ -274,6 +274,37 @@ p {
     }
     span {
         font-weight: bold;
+    }
+}
+.user-profile {
+    .user-id {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 3%;
+        width: 57%;
+    }
+    h5 {
+        font-size: 32px;
+        font-family: 'Segoe UI Bold', sans-serif;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: 20px;
+        color: #909090;
+        font-weight: 100;
+    }
+    span {
+        font-style: italic;
+    }
+    h5, h6, span {
+        line-height: 1.4;
+    }
+    img {
+        width: 36%;
+        height: auto;
+    }
+    p {
+        padding-top: $padding / 2;
     }
 }
 
