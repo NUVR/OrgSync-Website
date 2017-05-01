@@ -7,6 +7,8 @@
 /* Global variables */
 $anim: 0.25s;
 $primary: #eb1d1d;
+$navbarheight: 160px;
+$padding: 2em;
 
 /* Fonts */
 @font-face {
@@ -72,14 +74,39 @@ body {
         @include flex-grow(1);
     }
 }
+h3 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #181313;
+    font-size: 36px;
+}
+p {
+    line-height: 2;
+    color: #5b5b5b;
+    padding-top: $padding;
+}
+.btn {
+    background: $primary;
+    border: 0;
+    color: #fff;
+    padding: 1em 4em;
+    margin-top: $padding;
+    @include transition( background $anim );
+    &:hover {
+        background: #c31f1f;
+    }
+    &:focus {
+        outline: none;
+    }
+}
 
 /* Navigation bar */
 #header {
     position: absolute;
 	width: 100%;
+    height: $navbarheight;
     .width {
         overflow: auto;
-        padding: 2em 0;
+        padding: $padding 0;
         .logo {
             display: inline-block;
             height: 90px;
@@ -89,7 +116,7 @@ body {
             float: right;
             li {
                 display: inline-block;
-                padding: 1em 2em;
+                padding: $padding / 2 $padding;
                 font-family: 'Avenir', sans-serif;
                 font-size: 20px;
                 cursor: default;
@@ -165,7 +192,7 @@ body {
         .flex-img {
             flex: 1 1 auto;
             img {
-                padding: 2em;
+                padding: $padding;
                 max-width: 100%;
             }
         }
@@ -184,28 +211,55 @@ body {
         margin-left: -20vw; // Responsive @ 960px
         margin-right: 20vw; // Responsive @ 960px
     }
-    h3 {
-        font-family: 'Segoe UI', sans-serif;
-        color: #181313;
-        font-size: 36px;
-    }
-    p {
-        line-height: 2;
-        color: #5b5b5b;
-        padding: 2em 0;
-    }
-    .btn {
-        background: $primary;
-        border: 0;
+}
+
+/* Other Pages */
+.topic-heading {
+    height: 40vh;
+    min-height: 300px;
+    background: url('../img/background.jpg') no-repeat center center;
+    background-size: cover;
+    h1, h2 {
         color: #fff;
-        padding: 1em 4em;
-        @include transition( background $anim );
-        &:hover {
-            background: #c31f1f;
+        cursor: default;
+    }
+    h1 {
+        font-family: 'Segoe UI Bold', sans-serif;
+        font-size: 60px;
+    }
+    h2 {
+        font-family: 'Avenir', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+
+    }
+    .width {
+        padding-top: $navbarheight / 2;
+    }
+}
+.content {
+    section {
+        padding: $padding;
+        left, right {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
         }
-        &:focus {
-            outline: none;
-        }
+    }
+}
+/* About page */
+.classroom-info {
+    background: $primary;
+    width: 100%;
+    padding: $padding;
+    h4 {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        font-weight: normal;
+    }
+    span {
+        font-weight: bold;
     }
 }
 
@@ -215,7 +269,7 @@ body {
     background: #262626;
     .footer-content {
         color: #fff;
-        padding: 2em 0;
+        padding: $padding 0;
         .footer-widget {
             text-align: left;
             display: inline-block;
@@ -241,10 +295,13 @@ body {
         }
     }
     .copyright {
-        padding: 2em 0;
+        padding: $padding 0;
         color: #484848;
         background: #212121;
         font-size: 12px;
+        p {
+            padding: 0;
+        }
     }
 }
 

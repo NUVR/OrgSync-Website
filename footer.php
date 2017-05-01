@@ -19,6 +19,8 @@
             <ul>
                 <li><a href="https://www.facebook.com/groups/676589422498808" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook Page</a></li>
             </ul>
+            <h4 style="padding-top:20px;">Meeting Location</h4>
+            <p style="padding-top:10px;color:#eee;">Our current meeting locations are in <span>West Village H Room 1XX</span> at <span>7:30PM on Wednesdays</span></p>
         </div>
     </div>
     <div class="copyright">
