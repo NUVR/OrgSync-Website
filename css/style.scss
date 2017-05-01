@@ -65,6 +65,9 @@ a, a:visited, a:focus {
 body {
     font-family: 'Avenir', sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+    cursor: default;
+}
 // Aligns content vertically
 .valign {
     @include display(flex);
@@ -168,6 +171,17 @@ p {
         font-size: 24px; // Responsive @ 960px
         font-weight: 300;
         cursor: default;
+    }
+    .video-playing {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.95);
+        iframe {
+            transform: translateY(50%);
+        }
     }
     .playbutton {
         margin: 8vh auto;
