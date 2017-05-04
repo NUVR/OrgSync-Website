@@ -328,16 +328,18 @@ p {
         .date-info {
             display: inline-block;
             vertical-align: top;
-            width: 20%;
-            text-align: center;
+            width: 15%;
+            text-align: right;
             .date-day {
                 width: 20vw;
-                max-width: 160px;
+                max-width: 100px;
                 height: 20vw;
-                max-height: 160px;
+                max-height: 100px;
                 margin: 0 auto;
                 background: $primary;
                 border-radius: 4px;
+                text-align: center;
+                float: right;
                 h4, h5 {
                     font-family: 'Segoe UI Bold', sans-serif;
                     color: #fff;
@@ -347,7 +349,7 @@ p {
                     font-size: 24px;
                 }
                 h5 {
-                    font-size: 72px;
+                    font-size: 40px;
                 }
             }
             span {
@@ -355,6 +357,7 @@ p {
                 display: block;
                 font-weight: bold;
                 padding-top: 1em;
+                float: right;
                 &:last-child {
                     padding-top: 0.5em;
                     color: #6e6e6e;
@@ -364,7 +367,7 @@ p {
         .event-info {
             display: inline-block;
             vertical-align: top;
-            width: 75%;
+            width: 80%;
             margin-left: 4%;
             h3 {
                 font-family: 'Segoe UI Bold', sans-serif;
@@ -382,15 +385,60 @@ p {
 #module_news {
     ul {
         list-style: none;
-        .news_info {
-            .new-tag {
-                display: none;
+        .post_entry {
+            padding: $padding;
+            border: 1px solid #efefef;
+            @include transition( height $anim );
+            border-radius: 8px;
+            .news_info {
+                padding-top: 0;
+                height: 100px;
+                .new-tag {
+                    display: none;
+                }
+                .date-day {
+                    width: 100px;
+                    max-width: 10%;
+                    display: inline-block;
+                    height: 100px;
+                    margin: 0 auto;
+                    background: $primary;
+                    border-radius: 4px;
+                    text-align: center;
+                    div {
+                        margin-top: 50%;
+	                    transform: translateY(-50%);
+                    }
+                    h4, h5 {
+                        font-family: 'Segoe UI Bold', sans-serif;
+                        color: #fff;
+                        line-height: 1;
+                    }
+                    h4 {
+                        font-size: 24px;
+                    }
+                    h5 {
+                        font-size: 40px;
+                    }
+                }
+                a {
+                    width: 87%;
+                    margin-left: 2%;
+                    display: inline-block;
+                    vertical-align: top;
+                    font-family: 'Segoe UI Bold', sans-serif;
+                    color: #181313;
+	                font-size: 36px;
+                    line-height: 100px;
+                }
             }
-        }
-    }
-    .news_post_body {
-        p {
-            padding-top: 0;
+            .news_post_body {
+                margin-left: 10%;
+                padding-top: $padding / 2;
+                p {
+                    padding-top: 0;
+                }
+            }
         }
     }
 }

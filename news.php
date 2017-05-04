@@ -29,4 +29,37 @@
 		</div>
 		<?php include 'footer.php'; ?>
 	</body>
+    <script type="text/javascript">
+    function showDates() {
+        var posts = document.querySelectorAll('.post_entry');
+        posts.forEach(function(e) {
+            // Get date from post
+            var date = new Date(e.querySelector('.news_info strong').innerHTML);
+            var months = [ "January", "February", "March", "April", "May", "June",
+    		    "July", "August", "September", "October", "November", "December" ];
+            // Create element with date of post
+            var dateday = document.createElement('div');
+    		dateday.className = 'date-day valign';
+    		var month = document.createElement('h4');
+    		month.innerHTML = months[parseInt(date.getMonth())];
+    		var day = document.createElement('h5');
+    		day.innerHTML = date.getDay();
+            var insideDiv = document.createElement('div');
+            insideDiv.appendChild(month);
+            insideDiv.appendChild(day);
+    		dateday.appendChild(insideDiv);
+            // Get anchor link
+            var link = e.querySelector('.news_info a');
+            // Remove all content from the news info
+            var info = e.querySelector('.news_info');
+            info.innerHTML = "";
+            // Re-append everything
+            info.appendChild(dateday);
+            info.appendChild(link);
+
+
+        })
+    }
+    showDates();
+    </script>
 </html>
