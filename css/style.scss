@@ -87,7 +87,7 @@ p {
     color: #5b5b5b;
     padding-top: $padding;
 }
-.btn {
+.btn, input[type="submit"] {
     background: $primary;
     border: 0;
     color: #fff;
@@ -230,6 +230,7 @@ p {
 /* Other Pages */
 .page-body {
     min-height: 300px;
+    padding: $padding;
 }
 .topic-heading {
     height: 40vh;
@@ -439,6 +440,17 @@ p {
                     padding-top: 0;
                 }
             }
+        }
+    }
+}
+
+/* Contact page */
+#module_contact {
+    form {
+        input, textarea {
+            width: 100%;
+            padding: $padding / 2;
+            border: 1px solid #efefef;
         }
     }
 }
