@@ -228,6 +228,9 @@ p {
 }
 
 /* Other Pages */
+.page-body {
+    min-height: 300px;
+}
 .topic-heading {
     height: 40vh;
     min-height: 300px;
@@ -311,7 +314,6 @@ p {
 /* Events page */
 #rss {
     padding: $padding 0;
-    min-height: 300px;
     .item {
         padding: $padding;
         padding-bottom: 0;
@@ -372,6 +374,23 @@ p {
                 padding-top: $padding / 2;
                 font-size: 20px;
             }
+        }
+    }
+}
+
+/* News page */
+#module_news {
+    ul {
+        list-style: none;
+        .news_info {
+            .new-tag {
+                display: none;
+            }
+        }
+    }
+    .news_post_body {
+        p {
+            padding-top: 0;
         }
     }
 }

@@ -10,7 +10,7 @@
 					<h2>Events scheduled by NUVR for the future</h2>
 				</div>
 			</div>
-			<div class="width" id="rss"></div>
+			<div class="width page-body" id="rss"></div>
 		</div>
 		<?php include 'footer.php'; ?>
 	</body>
