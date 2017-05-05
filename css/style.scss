@@ -114,6 +114,13 @@ p {
             display: inline-block;
             height: 90px;
         }
+        i {
+            color: #fff;
+            font-size: 32px;
+            line-height: 90px;
+            cursor: pointer;
+            display: none;
+        }
         ul {
             list-style: none;
             float: right;
@@ -216,6 +223,7 @@ p {
 /* "About" section */
 #about {
     padding: 3em 0;
+    overflow-x: hidden;
     left, right {
         width: 50%; // Responsive @ 960px
         display: inline-block;
@@ -446,6 +454,8 @@ p {
 
 /* Contact page */
 #module_contact {
+    width: 49%;
+    display: inline-block;
     form {
         input, textarea {
             width: 100%;
@@ -511,6 +521,43 @@ p {
     }
 }
 @media screen and (max-width: 960px) {
+    #header {
+        .width {
+            i {
+                display: inline-block;
+                vertical-align: top;
+                float: right;
+                padding: 0 $padding / 2;
+                &.menu-close {
+                    display: block;
+                    text-align: right;
+                    position: absolute;
+                    top: 1em;
+                    right: 1em;
+                }
+            }
+            ul {
+                position: fixed;
+                top: 0;
+                margin: 0;
+                padding: $padding;
+                text-align: center;
+                left: 100%;
+                height: 100%;
+                width: 100%;
+                background: $primary;
+                @include transition( left $anim );
+                li {
+                    display: block;
+                    padding: $padding;
+                    font-weight: bold;
+                }
+                &.active {
+                    left: 0;
+                }
+            }
+        }
+    }
     #top {
         h1 {
             font-size: 72px;
@@ -529,8 +576,8 @@ p {
             text-align: center;
             padding-bottom: 1em;
             img {
-                height: 200px;
-                width: initial;
+                height: auto;
+                width: 100%;
             }
         }
     }

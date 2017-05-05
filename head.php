@@ -7,5 +7,6 @@
 	<link rel="icon" href="http://www.orgsync.com/images/favicon.ico" type="image/x-icon" />
 	<!-- [[file:orgsync_defaults]] -->
 	<link href="[[file:stylesheet]]" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
