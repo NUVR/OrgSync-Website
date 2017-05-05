@@ -242,7 +242,7 @@ p {
 }
 .topic-heading {
     height: 40vh;
-    min-height: 300px;
+    min-height: 400px;
     background: url('../img/background.jpg') no-repeat center center;
     background-size: cover;
     h1, h2 {
@@ -560,11 +560,14 @@ p {
     }
     #top {
         h1 {
-            font-size: 72px;
+            font-size: 50px;
         }
         h2 {
             font-size: 18px;
         }
+    }
+    .logos .width .flex-img img {
+        padding: 0.5em;
     }
     #about {
         left, right {
@@ -578,6 +581,27 @@ p {
             img {
                 height: auto;
                 width: 100%;
+            }
+        }
+    }
+    .content {
+        section {
+            left, right {
+                width: 100%;
+            }
+        }
+    }
+    .user-profile .user-id {
+        width: 100%;
+    }
+    #footer {
+        .footer-content {
+            .footer-widget {
+                width: 80%;
+                padding-bottom: 1em;
+                &:last-child {
+                    padding-bottom: 0;
+                }
             }
         }
     }
