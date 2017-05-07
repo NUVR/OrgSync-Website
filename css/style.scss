@@ -271,6 +271,14 @@ p {
             display: inline-block;
             vertical-align: top;
         }
+        &.contact-page {
+            left {
+                width: 70%;
+            }
+            right {
+                width: 30%;
+            }
+        }
     }
 }
 /* About page */
@@ -454,8 +462,14 @@ p {
 
 /* Contact page */
 #module_contact {
-    width: 49%;
+    width: 95%;
     display: inline-block;
+    .pod-header-text {
+        font-family: 'Avenir', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 2em;
+    }
     form {
         input, textarea {
             width: 100%;

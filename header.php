@@ -15,7 +15,7 @@
 			</ul>
 		</div>
 	</div>
-	<div style="background:#eb1d1d;position:fixed;bottom:0;width:100%;padding:1em;text-align:center;">
+	<div style="background:#eb1d1d;position:fixed;bottom:0;width:100%;padding:1em;text-align:center;z-index: 999;">
 		<span style="color:#fff;">Please note: This website is only temporary as we work to secure the funding necessary to host our own website</span>
 	</div>
 </div>

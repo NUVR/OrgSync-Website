@@ -25,5 +25,8 @@
     </div>
     <div class="copyright">
         <p>Copyright &copy; 2017 Northeastern University Virtual Reality. All rights reserved.</p>
+        <div style="background:#212121;bottom:0;width:100%;padding:1.3em;text-align:center;">
+    		<span style="visibility:hidden;">Please note: This website is only temporary as we work to secure the funding necessary to host our own website</span>
+    	</div>
     </div>
 </div>
