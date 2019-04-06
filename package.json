@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "A handful of jade files that can easily be converted into HTML and uploaded to OrgSync",
   "scripts": {
-    "build": "jade src/views/index.jade -o build -P"
+    "clean": "rm -rf ./dist",
+    "build": "yarn build:sass && yarn build:jade",
+    "build:sass": "node-sass src/styles/main.sass -o dist/styles",
+    "build:jade": "jade src/views/index.jade -o dist -P"
   },
   "author": "Peter Abbondanzo",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "node-sass": "^4.11.0"
   }
 }
