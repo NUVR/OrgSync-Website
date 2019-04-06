@@ -2,12 +2,27 @@
 
 #header
   color: #ffffff
-  position: relative
   height: 50vh
   z-index: 0
   background: $linear-gradient-overlay, url($background-url) no-repeat center center
   background-size: cover
+  padding-bottom: $container-overlap
+
+
+#container
+  background: $white
+  margin-top: -$container-overlap
 
 .content
   width: $content-width
+  padding: 16px
   margin: 0 auto
+
+.grid-container
+  display: grid
+
+  &.grid-2
+    grid-template-columns: auto auto
+
+  .grid-item
+    padding: 16px
