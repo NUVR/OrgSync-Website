@@ -1,5 +1,41 @@
 @import variables
 
+#header
+  color: #ffffff
+  z-index: 0
+  background: $linear-gradient-overlay, url($background-url) no-repeat center center
+  background-size: cover
+  padding-top: $nav-height
+  padding-bottom: $container-overlap
+
+  .content
+    height: 100%
+
+    &.home
+      padding: 40px $container-padding
+
+
+#container
+  background: $white
+  margin-top: -$container-overlap
+
+.content
+  max-width: $content-width
+  padding: $container-padding
+  margin: 0 auto
+
+.grid-container
+  display: grid
+
+  &.grid-2
+    grid-template-columns: auto auto
+
+  .grid-item
+    padding: $container-padding
+
+.m-left-10
+  margin-left: 10px
+
 #navbar
   width: 100%
   height: $nav-height
@@ -50,36 +86,3 @@
 
           &::before
             right: 0
-
-#header
-  color: #ffffff
-  z-index: 0
-  background: $linear-gradient-overlay, url($background-url) no-repeat center center
-  background-size: cover
-  padding-top: $nav-height
-  padding-bottom: $container-overlap
-
-  .content
-    height: 100%
-
-    &.home
-      padding: 40px $container-padding
-
-
-#container
-  background: $white
-  margin-top: -$container-overlap
-
-.content
-  max-width: $content-width
-  padding: $container-padding
-  margin: 0 auto
-
-.grid-container
-  display: grid
-
-  &.grid-2
-    grid-template-columns: auto auto
-
-  .grid-item
-    padding: $container-padding
