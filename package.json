@@ -5,5 +5,8 @@
   "scripts": {},
   "author": "Peter Abbondanzo",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
 }
