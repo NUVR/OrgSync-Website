@@ -1,0 +1,27 @@
+@import variables
+
+.btn
+  padding: 12px
+  font-weight: bold
+  background: $linear-gradient
+  color: #ffffff
+  border: none
+  transform: perspective(1px) translateZ(0)
+  transition-duration: $animation-time
+  transition-property: box-shadow, transform
+
+  &:hover
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
+    transform: scale(1.1)
+    z-index: 9999
+
+  a &
+    text-decoration: none
+
+  &.btn-large
+    padding: 18px
+
+  &.btn-outline
+    color: $dark-gray
+    border: 2px solid $dark-gray
+    background: rgba(255, 255, 255, 0)

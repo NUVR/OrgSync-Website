@@ -44,11 +44,14 @@ audio:not([controls])
 // Remove the gray background color from active links in IE 10.
 a
   background: transparent
+  text-decoration: none
 
-// Improve readability when focused and also mouse hovered in all browsers.
-a:active, a:hover
+  // Improve readability when focused and also mouse hovered in all browsers.
+  &:active, &:hover, &:focus
+    outline: 0
+
+button:focus
   outline: 0
-
 
 // Text-level semantics
 /////////////////////////
