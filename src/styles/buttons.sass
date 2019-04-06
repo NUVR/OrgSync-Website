@@ -2,6 +2,7 @@
 
 .btn
   padding: $button-padding
+  padding-bottom: $button-padding + 2
   font-weight: bold
   background: $linear-gradient
   color: $white
@@ -20,12 +21,16 @@
 
   &.btn-large
     padding: $button-padding-large
+    padding-bottom: $button-padding-large + 2
+    font-size: 20px
 
     &.btn-outline
       padding: #{$button-padding-large - $button-border-width}
+      padding-bottom: #{$button-padding-large - $button-border-width + 2}
 
   &.btn-outline
     padding: #{$button-padding - $button-border-width}
+    padding-bottom: #{$button-padding - $button-border-width + 2}
     color: $dark-gray
     border: $button-border-width solid $dark-gray
     background: rgba(255, 255, 255, 0)
