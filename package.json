@@ -2,7 +2,9 @@
   "name": "nuvr-orgsync",
   "version": "1.0.0",
   "description": "A handful of jade files that can easily be converted into HTML and uploaded to OrgSync",
-  "scripts": {},
+  "scripts": {
+    "build": "jade src/views/index.jade -o build -P"
+  },
   "author": "Peter Abbondanzo",
   "license": "MIT",
   "dependencies": {},

@@ -1,2 +1,5 @@
 # Node modules are bad
 node_modules/
+
+# Output
+build/
