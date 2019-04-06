@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "yarn build:sass && yarn build:jade",
-    "build:sass": "node-sass src/styles/main.sass -o dist/styles",
+    "build:sass": "node-sass src/styles/main.sass -o dist/styles --output-style compressed",
     "build:jade": "jade src/views/index.jade -o dist -P"
   },
   "author": "Peter Abbondanzo",
