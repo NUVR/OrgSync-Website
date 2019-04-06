@@ -1,7 +1,7 @@
 @import variables
 
 .btn
-  padding: $padding
+  padding: $button-padding
   font-weight: bold
   background: $linear-gradient
   color: $white
@@ -19,15 +19,15 @@
     text-decoration: none
 
   &.btn-large
-    padding: $padding-large
+    padding: $button-padding-large
 
     &.btn-outline
-      padding: #{$padding-large - $border-width}
+      padding: #{$button-padding-large - $button-border-width}
 
   &.btn-outline
-    padding: #{$padding - $border-width}
+    padding: #{$button-padding - $button-border-width}
     color: $dark-gray
-    border: $border-width solid $dark-gray
+    border: $button-border-width solid $dark-gray
     background: rgba(255, 255, 255, 0)
 
   &.btn-white
@@ -40,7 +40,7 @@
 
     &.btn-outline
       background: none
-      border: $border-width solid $white
+      border: $button-border-width solid $white
 
       span
         background: none
