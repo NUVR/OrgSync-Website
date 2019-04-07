@@ -1,11 +1,5 @@
-# sass cache files
-.sass-cache/
+# Node modules are bad
+node_modules/
 
-# source map files
-*.css.map
-*.js.map
-
-# compiled scss
-*.css
-
-*.bat
+# Output
+dist/

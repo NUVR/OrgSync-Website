@@ -1,0 +1,27 @@
+$font-stack: "Segoe UI", Helvetica, sans-serif
+$primary-color: #333
+
+@import normalize
+@import layout
+@import buttons
+@import fonts
+
+body
+  font: 100% $font-stack
+  color: $primary-color
+  background: $background
+
+.title
+  font-size: 84px
+  margin-bottom: 0
+
+.subtitle
+  font-weight: normal
+  font-size: 24px
+
+p
+  line-height: 1.5
+
+::selection
+  background: $gradient-start
+  color: $white

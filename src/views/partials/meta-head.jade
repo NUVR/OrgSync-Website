@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title Northeastern Virtual Reality
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    script(type='text/javascript').
+      const setActivePage = pageName => {
+        const linkSelector = document.querySelector(`.link#${pageName}`)
+        if (linkSelector) {
+          linkSelector.classList.add('active')
+        }
+      }

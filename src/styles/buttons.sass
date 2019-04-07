@@ -1,0 +1,54 @@
+@import variables
+
+.btn
+  padding: $button-padding
+  padding-bottom: $button-padding + 2
+  font-weight: bold
+  background: $linear-gradient
+  color: $white
+  border: none
+  transform: perspective(1px) translateZ(0)
+  transition-duration: $animation-time
+  transition-property: box-shadow, transform
+
+  &:hover
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
+    transform: scale(1.1)
+    z-index: 9999
+
+  a &
+    text-decoration: none
+
+  &.btn-large
+    padding: $button-padding-large
+    padding-bottom: $button-padding-large + 2
+    font-size: 20px
+
+    &.btn-outline
+      padding: #{$button-padding-large - $button-border-width}
+      padding-bottom: #{$button-padding-large - $button-border-width + 2}
+
+  &.btn-outline
+    padding: #{$button-padding - $button-border-width}
+    padding-bottom: #{$button-padding - $button-border-width + 2}
+    color: $dark-gray
+    border: $button-border-width solid $dark-gray
+    background: rgba(255, 255, 255, 0)
+
+  &.btn-white
+    background: $white
+
+    span
+      background: $webkit-linear-gradient
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+
+    &.btn-outline
+      background: none
+      border: $button-border-width solid $white
+
+      span
+        background: none
+        -webkit-background-clip: inherit
+        -webkit-text-fill-color: inherit
+        color: $white

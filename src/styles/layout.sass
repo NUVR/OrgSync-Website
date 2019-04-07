@@ -1,0 +1,88 @@
+@import variables
+
+#header
+  color: #ffffff
+  z-index: 0
+  background: $linear-gradient-overlay, url($background-url) no-repeat center center
+  background-size: cover
+  padding-top: $nav-height
+  padding-bottom: $container-overlap
+
+  .content
+    height: 100%
+
+    &.home
+      padding: 40px $container-padding
+
+
+#container
+  background: $white
+  margin-top: -$container-overlap
+
+.content
+  max-width: $content-width
+  padding: $container-padding
+  margin: 0 auto
+
+.grid-container
+  display: grid
+
+  &.grid-2
+    grid-template-columns: auto auto
+
+  .grid-item
+    padding: $container-padding
+
+.m-left-10
+  margin-left: 10px
+
+#navbar
+  width: 100%
+  height: $nav-height
+  position: absolute
+
+  .flex-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .logo
+      fill: $white
+      max-height: 100%
+
+      svg
+        height: 80px
+
+    .links
+      display: flex
+      align-items: center
+      color: $white
+
+      .link
+        cursor: pointer
+        margin: 20px
+        position: relative
+
+        &:hover::before
+          right: 0
+
+        &::before
+          content: ""
+          position: absolute
+          background: $white
+          left: 0
+          bottom: -6px
+          right: 100%
+          height: 4px
+          transition: all .25s
+          transition-timing-function: cubic-bezier(0.13, 1, 0.98, 0.98)
+          overflow: hidden
+
+          &:hover
+            right: 0
+
+        &.active
+          font-weight: bold
+
+          &::before
+            right: 0
